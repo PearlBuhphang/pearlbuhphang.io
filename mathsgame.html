@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌸 Math Quest — Cute Challenge Game</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mathsgame.css">
+</head>
+<body>
+
+  <div class="game">
+
+    <!-- ============ START SCREEN ============ -->
+    <section class="screen start" id="start">
+      <span class="mascot">🧠✨</span>
+      <h1 class="logo">Math Quest</h1>
+      <p class="subtitle">A cute little brain adventure 🌸</p>
+
+      <div class="feature-row">
+        <span class="chip">➕ Addition</span>
+        <span class="chip">➖ Subtraction</span>
+        <span class="chip">✖️ Multiply</span>
+        <span class="chip">➗ Divide</span>
+      </div>
+
+      <a href="#level1" class="btn">Let's Play! 🚀</a>
+    </section>
+
+    <!-- ============ LEVEL 1 — ADDITION ============ -->
+    <section class="screen" id="level1">
+      <span class="level-tag">🌱 Level 1 · Addition</span>
+      <div class="progress-bar"><div class="progress-fill p25"></div></div>
+
+      <div class="question">
+        <span class="emoji">🍓</span>
+        7 + 5 = ?
+      </div>
+
+      <input type="radio" name="level1" id="l1a" value="10">
+      <input type="radio" name="level1" id="l1b" value="11">
+      <input type="radio" name="level1" id="l1c" value="12">
+      <input type="radio" name="level1" id="l1d" value="13">
+
+      <div class="answers">
+        <label for="l1a">10</label>
+        <label for="l1b">11</label>
+        <label for="l1c">12</label>
+        <label for="l1d">13</label>
+      </div>
+
+      <div class="feedback wrong fb-1a">Oopsie! 🙈 Try again, cutie~</div>
+      <div class="feedback wrong fb-1b">So close! 💭 Give it another go!</div>
+      <div class="feedback correct fb-1c">
+        Yaaas! 🎉 That's correct! <br>
+        <a href="#level2" class="next-btn">Next Level ➜</a>
+      </div>
+      <div class="feedback wrong fb-1d">Not quite 🌸 Tap another box!</div>
+    </section>
+
+    <!-- ============ LEVEL 2 — SUBTRACTION ============ -->
+    <section class="screen" id="level2">
+      <span class="level-tag">🌸 Level 2 · Subtraction</span>
+      <div class="progress-bar"><div class="progress-fill p50"></div></div>
+
+      <div class="question">
+        <span class="emoji">🧁</span>
+        18 − 9 = ?
+      </div>
+
+      <input type="radio" name="level2" id="l2a" value="7">
+      <input type="radio" name="level2" id="l2b" value="8">
+      <input type="radio" name="level2" id="l2c" value="9">
+      <input type="radio" name="level2" id="l2d" value="10">
+
+      <div class="answers">
+        <label for="l2a">7</label>
+        <label for="l2b">8</label>
+        <label for="l2c">9</label>
+        <label for="l2d">10</label>
+      </div>
+
+      <div class="feedback wrong fb-2a">Almost! 💫 Try another one~</div>
+      <div class="feedback wrong fb-2b">Aww, not this time 🌷</div>
+      <div class="feedback correct fb-2c">
+        Slay! 💖 Perfect answer! <br>
+        <a href="#level3" class="next-btn">Next Level ➜</a>
+      </div>
+      <div class="feedback wrong fb-2d">Nope nope 🙊 Keep going!</div>
+    </section>
+
+    <!-- ============ LEVEL 3 — MULTIPLICATION ============ -->
+    <section class="screen" id="level3">
+      <span class="level-tag">⭐ Level 3 · Multiplication</span>
+      <div class="progress-bar"><div class="progress-fill p75"></div></div>
+
+      <div class="question">
+        <span class="emoji">🌟</span>
+        6 × 4 = ?
+      </div>
+
+      <input type="radio" name="level3" id="l3a" value="20">
+      <input type="radio" name="level3" id="l3b" value="22">
+      <input type="radio" name="level3" id="l3c" value="24">
+      <input type="radio" name="level3" id="l3d" value="26">
+
+      <div class="answers">
+        <label for="l3a">20</label>
+        <label for="l3b">22</label>
+        <label for="l3c">24</label>
+        <label for="l3d">26</label>
+      </div>
+
+      <div class="feedback wrong fb-3a">So close babe 💕 Try again!</div>
+      <div class="feedback wrong fb-3b">Not quite 🍡 Pick another~</div>
+      <div class="feedback correct fb-3c">
+        Iconic! 👑 You nailed it! <br>
+        <a href="#level4" class="next-btn">Final Level ➜</a>
+      </div>
+      <div class="feedback wrong fb-3d">Hmm 🤔 Try a different box!</div>
+    </section>
+
+    <!-- ============ LEVEL 4 — DIVISION ============ -->
+    <section class="screen" id="level4">
+      <span class="level-tag">👑 Final Level · Division</span>
+      <div class="progress-bar"><div class="progress-fill p100"></div></div>
+
+      <div class="question">
+        <span class="emoji">🎀</span>
+        20 ÷ 5 = ?
+      </div>
+
+      <input type="radio" name="level4" id="l4a" value="3">
+      <input type="radio" name="level4" id="l4b" value="4">
+      <input type="radio" name="level4" id="l4c" value="5">
+      <input type="radio" name="level4" id="l4d" value="6">
+
+      <div class="answers">
+        <label for="l4a">3</label>
+        <label for="l4b">4</label>
+        <label for="l4c">5</label>
+        <label for="l4d">6</label>
+      </div>
+
+      <div class="feedback wrong fb-4a">Not this one 🌼 Try again!</div>
+      <div class="feedback correct fb-4b">
+        LEGENDARY! 🏆 You did it! <br>
+        <a href="#win" class="next-btn">See My Score ✨</a>
+      </div>
+      <div class="feedback wrong fb-4c">Aww 💭 One more try!</div>
+      <div class="feedback wrong fb-4d">Almost! 🎈 Tap another box~</div>
+    </section>
+
+    <!-- ============ WIN SCREEN ============ -->
+    <section class="screen" id="win">
+      <span class="trophy">🏆</span>
+      <h2 class="win-title">You're a Math Queen!</h2>
+      <p class="subtitle">All levels completed 💖</p>
+
+      <div class="stars">
+        <span>⭐</span><span>⭐</span><span>⭐</span>
+      </div>
+
+      <div class="score-card">
+        🧠 Brain Power: <strong>MAXED OUT</strong><br>
+        🌸 Cuteness Level: <strong>Over 9000</strong><br>
+        ✨ Vibe Check: <strong>Immaculate</strong>
+      </div>
+
+      <a href="#start" class="btn mint">Play Again 🔄</a>
+      <br>
+      <a href="#start" class="back-home">← Back to start</a>
+    </section>
+
+  </div>
+
+</body>
+</html>
